@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div><h1>Formularz zapytania</h1><fieldset><legend>Informacje o locie</legend><br>
+        <label for="datagodz">Wybierz datę i godzinę:</label>
+        <input type="datetime-local" id="datagodz" name="datagodz"><br><br>
+        <label for="miejscywy">Miejsce wylotu:</label>
+        <select name="miejscewy" id="miejscewy">
+            <legend>Miejsce Wylotu</legend>
+            <optgroup label="Polska">
+                <option value="KRK">Kraków</option>
+                <option value="WWA">Warszawa</option>
+                <option value="GDA">Gdańsk</option>
+            </optgroup></select><br><br>
+            <label for="miejscedoc">Miejsce docelowe:</label>
+            <select name="miejscedoc" id="miejscedoc">
+                <optgroup label="Anglia">
+                    <option value="KRK">London</option>
+                </optgroup>
+                <optgroup label="Francja">
+                    <option value="PR">Paris</option>
+                    <option value="CS">Calais</option>
+                </optgroup>
+        </select><br><br>
+        <label for="klasa">Wybierz klasę:</label><br>
+        <input type="radio" id="klasa" name="klasa" value="pierwsza">
+        <label for="pierwsza">1</label><br>
+        <input type="radio" id="klasa" name="klasa" value="druga">
+        <label for="druga">2</label><br><br>
+        <label for="bagaz">Czy posiadasz bagaż?</label><br>
+        <input type="radio" id="bagaz" name="bagaz" value="yes">
+        <label for="yes">tak</label><br>
+        <input type="radio" id="bagaz" name="bagaz" value="no">
+        <label for="no">nie</label><br>
+        <br>
+    </fieldset><br><br>
+    <fieldset><legend>Dane osobowe</legend><br>
+        <label for="name">Imię:</label>
+        <input type="text" name="name" id="name" placeholder="Imię"><br><br>
+        <label for="nazwisko">Nazwisko:</label>
+        <input type="text" name="nazwisko" id="nazwisko" placeholder="Nazwisko"><br><br>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" placeholder="E-mail" name="email"><br><br>
+        <label for="telefon">Numer telefonu:</label>
+        <input type="tel" id="telefon" placeholder="Numer telefonu" name="nr. telefonu"><br><br>
+    </fieldset><br><br>
+    <fieldset><legend>Uwagi</legend><br>
+        <textarea name="uwagi" id="uwagi" cols="150" rows="20"></textarea>
+    </fieldset>
+</div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <form action="" method="get" enctype="multipart/form-data">
+        <label for="imie">Imie:</label><br>
+        <input type="text" name="imie" id="imie" placeholder="Imię" autocomplete="off"><br><br>
+        <select name="name" id="name">
+            <optgroup label="sztorm w sobote na ognisku">
+                <option value="pawcio">Pawcio</option>
+                <option value="igus">Iguś</option>
+                <option value="but" selected>But</option>
+            </optgroup>
+            <optgroup label="p">
+                <option value="wit">Wit</option>
+                <option value="koza">koza</option>
+                <option value="kozanos">kozanosik</option>
+            </optgroup>
+        </select><br><br>
+        <textarea name="textarea" id="tak" cols="20" rows="25"> 
+            Lorem ipsum dolor Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum libero, illum iure eveniet exercitationem qui illo, debitis aliquid velit, eius atque minus distinctio eaque deserunt fugiat suscipit voluptates saepe Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae esse odit eveniet cum, dicta natus quam molestias inventore quae beatae quidem est corporis architecto nulla autem laboriosam, temporibus perferendis laborum. amet consectetur adipisicing elit. Ratione culpa possimus maxime quia corporis, eos voluptates, non fugiat sint nobis, quam aperiam. Provident voluptate ab ipsa pariatur inventore necessitatibus ea?
+        </textarea>
+        <fieldset>
+            <legend>Janek tu był</legend>
+            <label for="imie">Imie:</label><br>
+            <input type="text" name="imie" id="imie" placeholder="Imię" autocomplete="off"><br><br>
+            <select name="name" id="name">
+                <optgroup label="sztorm w sobote na ognisku">
+                    <option value="pawcio">Pawcio</option>
+                    <option value="igus">Iguś</option>
+                    <option value="but" selected>But</option>
+                </optgroup>
+                <optgroup label="p">
+                    <option value="wit">Wit</option>
+                    <option value="koza">koza</option>
+                    <option value="kozanos">kozanosik</option>
+                </optgroup>
+            </select><br><br>
+            <textarea name="textarea" id="tak" cols="20" rows="25"> 
+                Lorem ipsum dolor Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum libero, illum iure eveniet exercitationem qui illo, debitis aliquid velit, eius atque minus distinctio eaque deserunt fugiat suscipit voluptates saepe Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae esse odit eveniet cum, dicta natus quam molestias inventore quae beatae quidem est corporis architecto nulla autem laboriosam, temporibus perferendis laborum. amet consectetur adipisicing elit. Ratione culpa possimus maxime quia corporis, eos voluptates, non fugiat sint nobis, quam aperiam. Provident voluptate ab ipsa pariatur inventore necessitatibus ea?
+            </textarea>
+        </fieldset>
+
+        <label for="nazwisko">Nazwisko:</label><br>
+        <input type="text" name="nazwisko" id="nazwisko" minlength="3" maxlength="12" placeholder="Nazwisko"><br><br>
+        <label for="haslo">Hasło:</label><br>
+        <input type="password" name="haslo" id="haslo" placeholder="Hasło"><br><br>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label><br><br>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> I have a bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" required>
+        <label for="vehicle2"> I have a car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" checked>
+        <label for="vehicle3"> I have a boat</label><br><br>
+        <label for="favcolor">Select your favorite color:</label><br>
+        <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br><br>
+        <label for="birthday">Birthday:</label><br>
+        <input type="date" id="birthday" name="birthday"><br><br>
+        <label for="datemax">Enter a date before 1980-01-01:</label><br>
+        <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+        <label for="datemin">Enter a date after 2000-01-01:</label><br>
+        <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
+        <label for="birthdaytime">Birthday (date and time):</label><br>
+        <input type="datetime-local" id="birthdaytime" name="birthdaytime"><br><br>
+        <label for="email">Enter your email:</label><br>
+        <input type="email" value="igor@igor.pl" id="email" placeholder="e-mail" name="email" readonly><br><br>
+        <label for="myfile">Select a file:</label><br>
+        <input type="file" id="myfile" name="myfile" multiple><br><br>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" placeholder="first name" name="fname"><br><br>
+        <input type="hidden" id="custId" name="custId" value="3487">
+        <label for="quantity">Quantity (between 1 and 5):</label><br>
+        <input type="number" id="quantity" placeholder="liczba" name="quantity" min="1" max="5"><br><br>
+        <label for="vol">Volume (between 0 and 50):</label><br>
+        <input type="range" id="vol" step="5" value="50" name="vol" min="0" max="50"><br><br>
+        <label for="country_code">Country code:</label><br>
+        <input type="text" id="country_code" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code"><br><br>
+        <input type="submit" value="WYŚLIJ">
+        <input type="reset" value="RESET">
+        </form>
+    </div>
+</body>
+</html>
